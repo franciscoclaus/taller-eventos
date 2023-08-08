@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Hola! Soy el div");
     });
 
-});
 
-/*    
-    const miDiv = document.querySelector("#container");
-    miDiv.addEventListener("click", function() {
-        alert("Hola! Soy el div");
+    const miBoton = document.querySelector("button");
+    miBoton.addEventListener("click", (event) => {
+        alert("Hola!");
+        event.stopPropagation();
     });
 
-*/
+});
